@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"gopkg.in/redis.v3"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 	"strings"
 )
 

@@ -56,7 +56,7 @@ Simple example:
 package margelet_test
 
 import (
-	"../margelet"
+	"github.com/tggo/margelet"
 )
 
 // EchoHandler is simple handler example
@@ -141,8 +141,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"../margelet"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/tggo/margelet"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 // SumSession - simple example session, that can sum numbers
@@ -217,7 +217,7 @@ package margelet_test
 
 import (
 	"github.com/zhulik/margelet"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 type InlineImage struct {
@@ -255,8 +255,8 @@ Simple example:
 package margelet_test
 
 import (
-	"../margelet"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/tggo/margelet"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 type CallbackMessage struct {

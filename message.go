@@ -2,7 +2,7 @@ package margelet
 
 import (
 	"gopkg.in/redis.v3"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 type message struct {

@@ -1,7 +1,7 @@
 package margelet_test
 
 import (
-	"../margelet"
+	"github.com/tggo/margelet"
 )
 
 // PanicHandler - test handler that panics

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"../margelet"
+	"github.com/tggo/margelet"
 	. "github.com/smartystreets/goconvey/convey"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 func TestMargelet(t *testing.T) {

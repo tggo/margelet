@@ -1,8 +1,8 @@
 package margelet_test
 
 import (
-	"../margelet"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/tggo/margelet"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 type CallbackMessage struct {

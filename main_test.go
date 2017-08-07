@@ -3,9 +3,9 @@ package margelet_test
 import (
 	"net/url"
 
-	"../margelet"
+	"github.com/tggo/margelet"
 
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 type BotMock struct {
@@ -32,7 +32,7 @@ func (bot BotMock) IsMessageToMe(message tgbotapi.Message) bool {
 	return false
 }
 
-func (bot BotMock) GetUpdatesChan(config tgbotapi.UpdateConfig) (<-chan tgbotapi.Update, error) {
+func (bot BotMock) GetUpdatesChan(config tgbotapi.UpdateConfig) (tgbotapi.UpdatesChannel, error) {
 	return bot.Updates, nil
 }
 

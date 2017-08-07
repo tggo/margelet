@@ -2,7 +2,7 @@ package margelet
 
 import (
 	"gopkg.in/redis.v3"
-	"gopkg.in/telegram-bot-api.v4"
+	"github.com/go-telegram-bot-api/telegram-bot-api"
 	"net/url"
 )
 
@@ -87,7 +87,8 @@ type TGBotAPI interface {
 	AnswerCallbackQuery(config tgbotapi.CallbackConfig) (tgbotapi.APIResponse, error)
 	GetFileDirectURL(fileID string) (string, error)
 	IsMessageToMe(message tgbotapi.Message) bool
-	GetUpdatesChan(config tgbotapi.UpdateConfig) (<-chan tgbotapi.Update, error)
+	//GetUpdatesChan(config tgbotapi.UpdateConfig) (<-chan tgbotapi.Update, error)
+	GetUpdatesChan(config tgbotapi.UpdateConfig) (tgbotapi.UpdatesChannel, error)
 	MakeRequest(endpoint string, params url.Values) (tgbotapi.APIResponse, error)
 }
 

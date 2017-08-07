@@ -1,7 +1,7 @@
 package margelet_test
 
 import (
-	"../margelet"
+	"github.com/tggo/margelet"
 )
 
 // EchoHandler is simple handler example
